@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "eurostoxx50-forecasting"
+name = "hack-eurostoxx"
 version = "0.1.0"
 description = ""
 authors = ["Leonardo Acquaroli <leonardo.acquaroli00@gmail.com>", "Davide Matta <davidematta7@gmail.com>"]
@@ -14,7 +14,7 @@ pandas = "^1.1.5"
 torch = "^2.3.0"
 yfinance = "^0.2.38"
 scikit-learn = "^1.4.2"
-
+pandas-ta = "^0.3.14b"
 
 [tool.poetry.group.dev.dependencies]
 jupyter = "^1.0.0"
