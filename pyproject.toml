@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "eurostoxx50-forecasting"
+version = "0.1.0"
+description = ""
+authors = ["Leonardo Acquaroli <leonardo.acquaroli00@gmail.com>", "Davide Matta <davidematta7@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+google-cloud-aiplatform = "^1.25.0"
+uvicorn = "^0.22.0"
+fastapi = "^0.95.2"
+pandas = "^1.1.5"
+torch = "^2.3.0"
+yfinance = "^0.2.38"
+scikit-learn = "^1.4.2"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
