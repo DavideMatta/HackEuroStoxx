@@ -52,7 +52,7 @@ class TradingDay(BaseModel):
     Close_t1 : float
 
 # TODO: Change in order to have the correct structure to handle ndarrays for the GRU model
-
+ # Prova credenziali
 @app.post("/predict/")
 def predict(trading_data: List[TradingDay]) -> float:
     X = np.array([dict(trading_day) for trading_day in trading_data])
