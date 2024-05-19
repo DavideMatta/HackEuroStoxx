@@ -33,7 +33,7 @@ class Preprocessing(BaseEstimator):
 
         return X_3d, y
     
-    def ttvf_split(self,
+    def tvtf_split(self,
                    X_3d,
                    y,
                    train_size: float = 0.7,
