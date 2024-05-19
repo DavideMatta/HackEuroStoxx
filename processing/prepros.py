@@ -16,8 +16,9 @@ class CustomDataset(Dataset):
         return self.X[index], self.y[index]
 
 class Preprocessing(BaseEstimator):
-    def __init__(self):
-        self.window_size = 5
+    def __init__(self, window_size=5, batch_size=32):
+        self.window_size = window_size
+        self.batch_size = batch_size
 
     def fit(self, X, y=None):
         return self
