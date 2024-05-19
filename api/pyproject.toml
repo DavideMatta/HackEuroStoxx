@@ -6,7 +6,7 @@ authors = ["Emanuele Guidotti <emanuele.guidotti@unine.ch>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.9"
 scikit-learn = "^1.4.2"
 uvicorn = "^0.22.0"
 fastapi = "^0.95.2"
