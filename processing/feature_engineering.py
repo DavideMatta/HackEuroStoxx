@@ -59,13 +59,6 @@ class DateHandling(BaseEstimator, TransformerMixin):
         # Convert the Date column to a numerical format (days since base_date)
         X['Date_numeric'] = (X[self.date_col] - self.base_date).dt.days
 
-
-        # Set back Date as index        
-        try:
-            X = X.set_index(self.date_col)
-        except:
-            print(f'Unable to set back `{self.date_col}` to index')
-
         # Drop the original 'Month', 'Weekday', and 'Date' columns as they have been transformed
         X = X.drop(['Month', 'Weekday'], axis=1)
 
